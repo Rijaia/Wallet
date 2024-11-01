@@ -1,13 +1,14 @@
 package org.example.wallet_test.service;
 
-import org.example.wallet_test.model.OperationType;
 import org.example.wallet_test.model.Wallet;
+import org.example.wallet_test.repository.WalletRepository;
 import org.springframework.stereotype.Service;
 
 @Service
 public class WalletService {
 
     private Wallet wallet;
+    private WalletRepository walletRepository;
 
     public void createWallet(Wallet wallet) {
         // добавить новый кошелек в базу данных//
