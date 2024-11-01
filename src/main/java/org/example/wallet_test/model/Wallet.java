@@ -22,7 +22,7 @@ public class Wallet {
         this.id = id;
     }
 
-    public long getBalance() {
+    public long getBalance(long id) {
         return balance;
     }
 
@@ -30,7 +30,7 @@ public class Wallet {
         this.balance = balance;
     }
 
-    public OperationType getOperationType() {
+    public OperationType getOperationType(long id) {
         return operationType;
     }
 
