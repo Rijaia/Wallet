@@ -1,17 +1,19 @@
 package org.example.wallet_test.model;
 
+import org.springframework.data.annotation.Id;
+
 import java.util.Objects;
 
 public class Wallet {
+   @Id
     private Long id; //идентификатор конкретного кошелька//
     private long balance; //сумма на счету//
     private OperationType operationType; //тип доступной операции//
-    private final long amount = 1000L;
+    private long amount;
 
-    public Wallet(Long id, long balance, OperationType operationType) {
+    public Wallet(Long id, long balance) {
         this.id = id;
         this.balance = balance;
-        this.operationType = operationType;
     }
 
     public Long getId() {
